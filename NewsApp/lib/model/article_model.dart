@@ -1,6 +1,4 @@
-//Now let's create the article model
-// for that we just need to copy the property from the json structure
-// and make a dart object
+// create the article model
 
 import 'source_model.dart';
 
@@ -14,7 +12,7 @@ class Article {
   String publishedAt;
   String content;
 
-  //Now let's create the constructor
+  //constructor
   Article(
       {this.source,
       this.author,
@@ -25,7 +23,7 @@ class Article {
       this.publishedAt,
       this.content});
 
-  //And now let's create the function that will map the json into a list
+  //create function that will map the json into a list
   factory Article.fromJson(Map<String, dynamic> json) {
     return Article(
       source: Source.fromJson(json['source']),

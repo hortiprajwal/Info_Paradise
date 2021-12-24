@@ -32,7 +32,7 @@ Widget customListTile(Article article, BuildContext context) {
             height: 200.0,
             width: double.infinity,
             decoration: BoxDecoration(
-              //let's add the height
+              //add the height
 
               image: DecorationImage(
                   image: NetworkImage(article.urlToImage), fit: BoxFit.cover),
@@ -45,14 +45,17 @@ Widget customListTile(Article article, BuildContext context) {
           Container(
             padding: EdgeInsets.all(6.0),
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: Colors.redAccent[700],
               borderRadius: BorderRadius.circular(30.0),
             ),
             child: Text(
               article.source.name,
               style: TextStyle(
                 color: Colors.white,
+                fontSize: 15.0,
+                fontWeight: FontWeight.bold,
               ),
+
             ),
           ),
           SizedBox(
@@ -62,7 +65,7 @@ Widget customListTile(Article article, BuildContext context) {
             article.title,
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 16.0,
+              fontSize: 18.0,
             ),
           )
         ],

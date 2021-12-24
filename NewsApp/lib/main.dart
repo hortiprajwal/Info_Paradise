@@ -28,21 +28,24 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.indigoAccent[100],
       appBar: AppBar(
-        title: Text("News App", style: TextStyle(color: Colors.black)),
-        backgroundColor: Colors.white,
+        elevation: 0.0,
+        title: Center(
+            child: Text("Info Paradise", style: TextStyle(color: Colors.white))),
+        backgroundColor: Colors.deepPurpleAccent[400],
       ),
 
-      //Now let's call the APi services with futurebuilder wiget
+      //Call the APi services with future builder widget
       body: FutureBuilder(
         future: client.getArticle(),
         builder: (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
-          //let's check if we got a response or not
+          //Check if got a response or not
           if (snapshot.hasData) {
-            //Now let's make a list of articles
+            //make a list of articles
             List<Article> articles = snapshot.data;
             return ListView.builder(
-              //Now let's create our custom List tile
+              //create our custom List tile
               itemCount: articles.length,
               itemBuilder: (context, index) =>
                   customListTile(articles[index], context),
