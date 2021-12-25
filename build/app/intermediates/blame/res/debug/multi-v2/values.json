@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Info_Paradise\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Prajwal\\Documents\\Info_Paradise\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Prajwal\\.gradle\\caches\\transforms-2\\files-2.1\\f90299ff420036e311b84c728802cd71\\core-1.6.0\\res\\values\\values.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "E:\\Info_Paradise\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\Prajwal\\Documents\\Info_Paradise\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
