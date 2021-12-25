@@ -10,7 +10,7 @@ class ApiService {
   //add an Endpoint URL, use a single endpoint
 
   final endPointUrl =
-      "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=58a7d516053c4cfe99f6f95adac0d810";
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=58a7d516053c4cfe99f6f95adac0d810";
 
   Future<List<Article>> getArticle() async {
     Response res = await get(endPointUrl);
